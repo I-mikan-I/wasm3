@@ -17,6 +17,7 @@ set(sources
 )
 
 add_library(m3 STATIC ${sources})
+target_link_libraries(m3 PUBLIC m)
 
 target_include_directories(m3 PUBLIC .)
 
